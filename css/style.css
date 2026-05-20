@@ -1,0 +1,25 @@
+:root { 
+    --primary: #13489e; 
+    --secondary: #191C24; 
+    --light: #6C7293; 
+    --dark: #000000; 
+}
+body { 
+    background-color: var(--dark); 
+    color: var(--light); 
+    font-family: 'Open Sans', sans-serif; 
+}
+.bg-secondary { background-color: var(--secondary) !important; }
+.text-primary { color: var(--primary) !important; }
+.btn-primary { background-color: var(--primary); border-color: var(--primary); color: #fff; }
+.btn-primary:hover { background-color: #097c9c; border-color: #097c9c; }
+
+/* Setup Sidebar Admin */
+.sidebar { width: 250px; height: 100vh; position: fixed; background: var(--secondary); }
+.content { margin-left: 250px; min-height: 100vh; width: calc(100% - 250px); }
+.sidebar .navbar-nav .nav-link { padding: 10px 20px; color: var(--light); font-weight: 500; white-space: nowrap; font-size: 15px; }
+.sidebar .navbar-nav .nav-link:hover, .sidebar .navbar-nav .nav-link.active { color: var(--primary); background: var(--dark); border-left: 3px solid var(--primary); }
+
+/* Form Control UI Fix */
+.form-control { background-color: var(--dark); border: none; color: #fff; }
+.form-control:focus { background-color: var(--dark); color: #fff; box-shadow: 0 0 0 0.25rem rgba(19, 72, 158, 0.25); }
